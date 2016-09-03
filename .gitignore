@@ -28,3 +28,5 @@ target/surefire-reports/morpion.entities.CaseTest.txt
 target/surefire-reports/TEST-morpion.AppTest.xml
 
 target/surefire-reports/TEST-morpion.entities.CaseTest.xml
+
+target/*
