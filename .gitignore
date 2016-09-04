@@ -30,3 +30,5 @@ target/surefire-reports/TEST-morpion.AppTest.xml
 target/surefire-reports/TEST-morpion.entities.CaseTest.xml
 
 target/*
+
+.idea/uiDesigner.xml
