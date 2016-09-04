@@ -7,22 +7,22 @@ import junit.framework.TestCase;
  */
 public class CoupleTest extends TestCase
 {
+    Couple c;
     public void setUp() throws Exception
     {
         super.setUp();
-
-
     }
 
     public void tearDown() throws Exception
     {
-
+        c = null;
     }
 
 
     public void testGetX() throws Exception
     {
-        fail("not implemented");
+        c = new Couple(3,2);
+        assertEquals("3 attendu",3,c.getX());
     }
 
     public void testSetX() throws Exception
