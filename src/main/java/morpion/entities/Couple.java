@@ -35,6 +35,15 @@ public class Couple
         this.p1 = -1;
         this.p2 = -1;
     }
+
+    public Couple(int x, int y,int p1,int p2)
+    {
+        super();
+        this.x = x;
+        this.y = y;
+        this.p1 = p1;
+        this.p2 = p2;
+    }
     public Couple()
     {
         // TODO Auto-generated constructor stub
