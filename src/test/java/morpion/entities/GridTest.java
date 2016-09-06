@@ -14,7 +14,7 @@ public class GridTest extends TestCase
     public void setUp() throws Exception
     {
         super.setUp();
-        size = new Random().nextInt(101);
+        size = new Random().nextInt(100)+1;
         grid = new Grid(size);
     }
 
@@ -68,11 +68,14 @@ public class GridTest extends TestCase
 
     public void testGetEmptyCases() throws Exception
     {
-        //List<List<Character>> tmp = new ArrayList<List<Character>>();
+        int x = getRandom();
+        int y = getRandom();
+        Couple cplRes;
         Grid gridCopy = new Grid(grid);
         assertTrue("have to be the same",gridCopy.equals(grid));
-        //tmp.addAll(grid.getGrid());
-        grid.play(Character.O,getRandom(),getRandom());
+
+        cplRes = grid.play(Character.O,x,y);
+        assertTrue("have to be the same",new Couple(x,y).equals(cplRes));
         assertFalse("have to differ",gridCopy.equals(grid.getGrid()));
     }
 
