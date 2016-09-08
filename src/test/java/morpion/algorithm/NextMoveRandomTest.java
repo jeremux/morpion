@@ -1,8 +1,11 @@
-package morpion.entities;
+package morpion.algorithm;
 
 import junit.framework.TestCase;
 import morpion.algorithm.NextMove;
 import morpion.algorithm.NextMoveRandom;
+import morpion.entities.Character;
+import morpion.entities.Couple;
+import morpion.entities.Grid;
 
 import java.util.Random;
 
