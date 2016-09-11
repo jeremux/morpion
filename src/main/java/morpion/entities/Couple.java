@@ -94,4 +94,15 @@ public class Couple
     public void setPositionY(int y) {
         this.p2=y;
     }
+
+    public void print()
+    {
+        System.out.println("("+x+","+y+","+p1+","+p2+")");
+    }
+
+    public void print(String s)
+    {
+        System.out.print(s);
+        print();
+    }
 }
