@@ -61,7 +61,6 @@ public class NextMoveToWin implements NextMove
 
         if(loop)
         {
-            System.out.print("TOTO");
             Random r = new Random();
             randomIndex = r.nextInt(g.getEmptyCases().size());
             res = g.getEmptyCases().get(randomIndex);
